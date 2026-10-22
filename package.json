@@ -1,0 +1,32 @@
+{
+  "name": "@actseal/mcp",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "stdio MCP server for ActSeal — issue_receipt + verify_receipt (https://actseal.xyz)",
+  "bin": {
+    "actseal-mcp": "./src/index.ts"
+  },
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arults/actseal-mcp.git"
+  },
+  "homepage": "https://actseal.xyz",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}
