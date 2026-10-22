@@ -50,3 +50,17 @@ pnpm start
 - Docs: https://actseal.xyz/docs
 - OpenAPI: https://actseal.xyz/openapi.json
 - llms.txt: https://actseal.xyz/llms.txt
+
+## Docker / Glama
+
+```bash
+docker build -t actseal-mcp .
+docker run -i --rm \
+  -e ACTSEAL_BASE=https://actseal.xyz \
+  -e ACTSEAL_API_KEY=YOUR_KEY \
+  actseal-mcp
+```
+
+Glama listing: https://glama.ai/mcp/servers/arults/actseal-mcp (after submit + score).
+`glama.json` lists maintainer `arults`.
+
